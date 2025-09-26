@@ -2,12 +2,18 @@ package model;
 
 public class BancoIcesiController {
 
+    private Cliente[] clientes;
+    private int numClientes;
+
+
      /*
      * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
      * Agregue los atributos (relaciones) necesarios para satisfacer los requerimientos.
      */
 
-    public BancoIcesiController(){
+    public BancoIcesiController(int maxClientes){
+        clientes = new Cliente[maxClientes];
+        numClientes = 0;
 
     }
 
